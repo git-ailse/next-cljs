@@ -1,0 +1,32 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "next": "NODE_ENV=production next start",
+    "build": "next build",
+    "deploy": "pm2 start npm --name 'ningto' -- start -- -p 3344"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "next": "^7.0.0",
+    "override-fn": "^1.0.10",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "superagent": "^4.0.0",
+    "superagent-use": "^0.1.0"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-stylus": "^1.0.1",
+    "stylus": "^0.54.5",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

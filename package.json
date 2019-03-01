@@ -1,0 +1,22 @@
+{
+  "name": "next-cljs",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.6.10"
+  },
+  "dependencies": {
+    "antd": "^3.10.8",
+    "antd-mobile": "^2.2.6",
+    "axios": "^0.18.0",
+    "create-react-class": "^15.6.3",
+    "dayjs": "^1.7.8",
+    "override-fn": "^1.0.10",
+    "querystring": "^0.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "superagent": "^4.0.0",
+    "superagent-use": "^0.1.0",
+    "window-or-global": "^1.0.1"
+  }
+}

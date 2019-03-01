@@ -1,0 +1,19 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[reagent "0.8.1"]
+  ; [cljs-http "0.1.45"]
+  [cljs-ajax "0.8.0"]
+  [funcool/promesa "1.9.0"]
+  [binaryage/oops "0.6.3"]]
+
+ :open-file-command ["subl" ["%s:%s:%s" :file :line :column]] ;; 不生效
+
+ :builds
+ {:site {:target :npm-module
+         :output-dir "site/src/cljs"
+         :build-hooks [(shadow.next-js/create-pages)]}}}
